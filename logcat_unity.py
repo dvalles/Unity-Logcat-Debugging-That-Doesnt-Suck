@@ -24,9 +24,9 @@ def isDebugOrInfo(log_level):
 	log_level = log_level.rstrip()
 	return log_level=="I" or log_level=="D"
 
-def isWarningOrInfo(log_level):
+def isWarningOrDebug(log_level):
 	log_level = log_level.rstrip()
-	return log_level=="I" or log_level=="W"
+	return log_level=="D" or log_level=="W"
 
 def isException(log_message):
 	containsException = (log_message.find("Error") != -1) or (log_message.find("Exception") != -1)
@@ -56,7 +56,7 @@ while True:
 	if isIgnored(log_message):
 		continue
 
-	if isWarningOrInfo(log_level): #I don't want warning or info messages, you could change this easily
+	if isWarningOrDebug(log_level): #I don't want warning or info messages, you could change this easily
 		continue
 
 	# output = time + " " + log_level + " " + log_message
