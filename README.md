@@ -13,3 +13,6 @@ Script is simple enough, you should be able to modify it for your own needs. Cur
 - Make sure you're adb device is connected and running a Unity application
 - In command line, type adb logcat -v time | python logcat_unity.py
 - Or adb logcat -v time | python <Path to logcat_unity.py file> if you're not in the current directory
+  
+# Notes:
+- I've only tested on windows. If the file doesn't work on windows or linux, try removing the colorama code. It was added for windows specifically
