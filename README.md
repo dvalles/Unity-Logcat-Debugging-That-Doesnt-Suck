@@ -15,4 +15,4 @@ Script is simple enough, you should be able to modify it for your own needs. Cur
 - Or adb logcat -v time | python <Path to logcat_unity.py file> if you're not in the current directory
   
 # Notes:
-- I've only tested on windows. If the file doesn't work on windows or linux, try removing the colorama code. It was added for windows specifically
+- I've only tested on windows. If the file doesn't work on mac or linux, try removing the colorama code. It was added for windows specifically
